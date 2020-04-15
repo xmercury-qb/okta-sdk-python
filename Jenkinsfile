@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('shell') {
       steps {
-        sh 'ls -la'
+        sh '''ls -la
+pwd'''
       }
     }
 
